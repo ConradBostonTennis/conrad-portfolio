@@ -33,18 +33,14 @@ function Hero() {
         <div className="hero-role">
           <span>Senior Mechanical Engineer</span>
           <span>Product Designer</span>
-          <span>Founder, Empirical Innovation</span>
+          <span>Engineering Leader</span>
         </div>
         <p className="hero-tagline">
-          Twenty years of turning hard mechanical problems into shipped parts —
+          Twenty years of turning hard mechanical problems into shipped products —
           from fleet-wide root cause analyses across Amazon's robotics network
-          to custom valve assemblies and patent-pending tooling for industrial clients.
+          to industrial fluid systems, ultrasonic welding machines, and patent-pending tooling.
         </p>
         <div className="hero-meta">
-          <div>
-            <strong>$14.5M+</strong>
-            documented cost impact, Amazon Robotics
-          </div>
           <div>
             <strong>500+</strong>
             stations supported across 30+ fulfillment centers
@@ -52,6 +48,10 @@ function Hero() {
           <div>
             <strong>20 yrs</strong>
             SolidWorks / 3D CAD modeling
+          </div>
+          <div>
+            <strong>5+</strong>
+            industries: robotics, fluid systems, ultrasonic welding, product design
           </div>
         </div>
         <div className="hero-actions">
@@ -75,24 +75,21 @@ function About() {
           <div className="about-text">
             <p>
               I'm a Senior Mechanical Engineer with two decades of hands-on design
-              experience, currently supporting Amazon Robotics fulfillment systems
-              through Goddard Technologies on a keep-the-lights-on (KTLO) team.
-              My work spans maintenance engineering, root cause analysis, design
-              for manufacturability, and cross-functional leadership across teams
-              that span Amazon and contracting partners.
+              experience spanning robotics, industrial fluid systems, ultrasonic welding
+              machinery, and product development. Currently supporting Amazon Robotics
+              fulfillment systems through Goddard Technologies, leading sustaining
+              engineering for sortation, end-of-arm tooling, and ASRS workstations.
             </p>
             <p>
-              Outside of that role, I run Empirical Innovation, an independent
-              product design consultancy, where I take on mechanical design
-              projects for industrial clients — from custom valve actuation
-              hardware to patent-pending welding tools.
+              My background includes engineering management at Telsonic Solutions,
+              where I owned the full product lifecycle from business case through release
+              for industrial electro-mechanical and pneumatic systems. Before that, I spent
+              eight years at Asahi America in mechanical engineering, developing new
+              fluid handling products and designing manufacturing processes that reduced
+              defect rates and improved production throughput.
             </p>
             <p>
-              I also founded and lead Greater Boston Community Tennis Inc., a
-              nonprofit running UTR-sanctioned events, clinics, and youth
-              programming across the greater Boston area — work that draws on
-              the same operational and team-leadership skills I bring to
-              engineering programs.
+              Outside of engineering, I enjoy cooking, tennis, travel, and the outdoors.
             </p>
             <div className="edu-block">
               <div className="edu-item">
@@ -109,24 +106,30 @@ function About() {
             <div className="skills-group">
               <h4>Engineering</h4>
               <div className="skill-tags">
-                <span className="skill-tag">3D CAD Modeling (SolidWorks, 20+ yrs)</span>
-                <span className="skill-tag">GD&amp;T</span>
+                <span className="skill-tag">3D CAD / SolidWorks (20+ yrs)</span>
+                <span className="skill-tag">GD&amp;T &amp; Tolerance Stack-Ups</span>
                 <span className="skill-tag">FEA</span>
-                <span className="skill-tag">Robotics &amp; Automation Systems</span>
+                <span className="skill-tag">Robotics &amp; Automation</span>
                 <span className="skill-tag">Pneumatic Systems</span>
                 <span className="skill-tag">DFM</span>
-                <span className="skill-tag">Hardware Product Development</span>
+                <span className="skill-tag">FMEA</span>
+                <span className="skill-tag">6-Sigma (Cmk / Cpk)</span>
+                <span className="skill-tag">Fluid Systems</span>
+                <span className="skill-tag">3D Printing &amp; Prototyping</span>
+                <span className="skill-tag">EPDM Data Management</span>
               </div>
             </div>
             <div className="skills-group">
-              <h4>Leadership &amp; Strategy</h4>
+              <h4>Leadership &amp; Process</h4>
               <div className="skill-tags">
-                <span className="skill-tag">Product Design Strategy</span>
-                <span className="skill-tag">Cross-Functional Team Leadership</span>
+                <span className="skill-tag">Engineering Management</span>
+                <span className="skill-tag">Cross-Functional Leadership</span>
                 <span className="skill-tag">RCA &amp; TSB Authoring</span>
-                <span className="skill-tag">Agile / Sprint Delivery</span>
+                <span className="skill-tag">Agile / ECO Process</span>
+                <span className="skill-tag">Lean Manufacturing</span>
+                <span className="skill-tag">Process Development &amp; SOP Writing</span>
                 <span className="skill-tag">Sourcing &amp; Supply Chain</span>
-                <span className="skill-tag">Nonprofit Founding &amp; Operations</span>
+                <span className="skill-tag">Product Lifecycle Management</span>
               </div>
             </div>
           </div>
@@ -151,7 +154,7 @@ function ToteASRS() {
       <div className="project-stamp">
         <StampRow label="Role" value="Tech Lead / Product Owner — via Goddard Technologies" />
         <StampRow label="Scale" value="500 stations across network" />
-        <StampRow label="Cost Impact" value="$12,000,000+" big />
+        <StampRow label="Program" value="TOTE ASRS 2.5 & 3.0" />
       </div>
       <div className="project-body">
         <h3>TOTE ASRS Workstation — Redesign &amp; Cost Reduction</h3>
@@ -160,7 +163,6 @@ function ToteASRS() {
         <div className="subproject">
           <div className="subproject-head">
             <h4>TOTE ASRS 2.5 — DFM &amp; Cost Reduction (2023)</h4>
-            <span className="subproject-impact">$2,000,000</span>
           </div>
           <p>
             Took ownership of a complex workstation system with no prior context
@@ -179,7 +181,6 @@ function ToteASRS() {
         <div className="subproject">
           <div className="subproject-head">
             <h4>TOTE ASRS 3.0 — Ground-Up Redesign (2024)</h4>
-            <span className="subproject-impact">$10,000,000</span>
           </div>
           <p>
             Became product owner and led a full ground-up redesign of the 3.0
@@ -224,38 +225,32 @@ function CardinalEoAT() {
   const subprojects = [
     {
       title: 'J6 Mounting Bolt RCA (2025)',
-      impact: null,
       body: 'Led first Root Cause Analysis effort on a critical issue of J6 mounting bolts loosening over time across the fleet. Identified root cause and resolved by transitioning to nylon patch bolts. Zero recurrences since deployment.',
       tags: ['RCA', 'Documentation', 'Testing & Validation', 'Sourcing', 'Supply Chain', 'TSB Writing', 'BOMs', 'Agile'],
     },
     {
       title: 'Slip Ring RCA & Redesign',
-      impact: '$1,000,000',
-      body: 'Led a high-stakes RCA on a critical EoAT component — the slip ring — whose failure represented significant fleet risk. Triaged immediately by procuring and distributing spare slip rings to 30+ fulfillment centers with two RME points of contact per site. Conducted full RCA including OEM meetings and client presentations. Co-designed a new, more robust, backwards-compatible slip ring still in use across the fleet. Negotiated an RMA agreement with the OEM for free replacements, and implemented alarms and Andons to trigger automated repair response.',
+      body: 'Led a high-stakes RCA on a critical EoAT component — the slip ring — whose failure represented significant fleet risk. Triaged immediately by procuring and distributing spare slip rings to 30+ fulfillment centers. Conducted full RCA including OEM meetings and client presentations. Co-designed a new, more robust, backwards-compatible slip ring still in use across the fleet. Negotiated an RMA agreement with the OEM for free replacements, and implemented alarms and Andons to trigger automated repair response.',
       tags: ['RCA', 'Documentation', 'Design', 'Sourcing', 'Supply Chain', 'TSB Writing', 'BOMs', 'Agile'],
     },
     {
       title: 'Dresspack Damage RCA & Bracket Design',
-      impact: '$500,000',
       body: 'Identified and resolved dresspack damage occurring during normal operation — a high-risk issue due to months-long backorder status. Designed a custom bracket blocking the primary pinch point and distributed it to 30+ fulfillment centers covering 500+ stations, authoring the TSB and following up with each site to confirm installation.',
       tags: ['RCA', 'Documentation', 'Design', 'Supply Chain Distribution', 'TSB Writing'],
     },
     {
       title: 'Sticky Cup RCA',
-      impact: '$500,000',
       body: 'Tackled the most technically challenging RCA of tenure — a multi-system problem with simultaneous software, GCU, and hardware implications. Presented findings to Amazon Robotics Hardware Leads, identified both a primary and secondary root cause, and resolved through a combination of software updates and hardware replacements. Created alarms, Andons, and updated guidance across the fleet.',
       tags: ['RCA', 'Documentation', 'Design', 'Testing & Validation', 'TSB Writing', 'Cross-functional Leadership'],
     },
     {
       title: 'Pneumatics False Positives — Threshold Investigation',
-      impact: '$500,000',
       status: 'In Progress',
       body: 'Investigated pneumatics test false positives caused by thresholds set too high. Conducted on-site investigation at BOS3, identified lower threshold values, and discovered a secondary root cause — running the pneumatics test on all 28 stations simultaneously overloads the central vacuum system. Currently developing alert logic to trigger RME response on affected stations.',
       tags: ['RCA', 'On-site Investigation', 'Documentation', 'Process Improvement'],
     },
     {
       title: 'V5 Tubeless Manifold QC Issue',
-      impact: '$500,000',
       body: 'Called in to diagnose why 5% of EoATs were failing pneumatics testing on the assembly line. Rather than initiating a months-long RCA, investigated in a single day. Submitted suspect 3D-printed manifolds to CMM inspection and discovered dimensional deviations up to 600% out of spec. Directed the manufacturing team to implement supplier-level QC and RMA all non-conforming units — resolving the issue in days rather than months.',
       tags: ['RCA', 'CMM Inspection', 'Quality Control', 'Sourcing', 'Process Improvement'],
     },
@@ -266,7 +261,7 @@ function CardinalEoAT() {
       <div className="project-stamp">
         <StampRow label="Role" value="Tech Lead / Product Owner — via Goddard Technologies" />
         <StampRow label="Scale" value="500+ stations across 30+ fulfillment centers" />
-        <StampRow label="Cost Impact" value="$2,500,000+" big />
+        <StampRow label="Program" value="Cardinal EoAT" />
       </div>
       <div className="project-body">
         <h3>Cardinal End-of-Arm Tooling — RCA &amp; Engineering Improvements</h3>
@@ -276,7 +271,6 @@ function CardinalEoAT() {
           <div className="subproject" key={s.title}>
             <div className="subproject-head">
               <h4>{s.title}</h4>
-              {s.impact && <span className="subproject-impact">{s.impact}</span>}
             </div>
             {s.status && <div style={{ marginBottom: 8 }}><span className="status-tag">{s.status}</span></div>}
             <p>{s.body}</p>
@@ -317,10 +311,6 @@ function CardinalEoAT() {
   )
 }
 
-
-
-
-
 function Projects() {
   return (
     <section id="projects">
@@ -329,9 +319,8 @@ function Projects() {
           <span className="eyebrow">02 — Selected Work</span>
           <h2>Featured projects.</h2>
           <p>
-            Robotics maintenance engineering, root cause analysis, and
-            cost-reduction work supporting Amazon Robotics fulfillment systems
-            across 30+ sites and 500+ workstations.
+            Robotics maintenance engineering and root cause analysis supporting
+            Amazon Robotics fulfillment systems across 30+ sites and 500+ workstations.
           </p>
         </div>
         <ToteASRS />
@@ -350,32 +339,99 @@ function Experience() {
           <h2>Where I've worked.</h2>
         </div>
         <div className="timeline">
+
           <div className="tl-item">
-            <div className="tl-period">~2023 — Present</div>
+            <div className="tl-period">2022 — Present</div>
             <div className="tl-role">
-              <h3>Senior Mechanical Engineer, KTLO Team</h3>
-              <span className="tl-org">Amazon Robotics (via Goddard Technologies)</span>
+              <h3>Senior Mechanical Engineer — Technical Leader</h3>
+              <span className="tl-org">Goddard Technologies / Amazon Robotics</span>
               <p>
-                Keep-the-lights-on engineering support for fulfillment
-                workstations across multiple sites. Work spans maintenance
-                engineering, failure analysis, component transitions, and
-                pneumatic systems support for robotic end-of-arm tooling and
-                ASRS workstations.
+                Contract sustaining engineering for sortation systems, end-of-arm
+                tooling, and ASRS workstations supporting next-generation robotics
+                fulfillment centers. Technical lead and product owner for KTLO team
+                efforts including DFM redesigns, ECO releases, and fleet-wide RCA programs.
+                Delegate work across Amazon work tickets and collaborate with multidisciplinary
+                teams across engineering, software, and operations.
               </p>
             </div>
           </div>
+
           <div className="tl-item">
-            <div className="tl-period">Ongoing</div>
+            <div className="tl-period">2017 — 2022</div>
             <div className="tl-role">
-              <h3>Founder &amp; President</h3>
-              <span className="tl-org">Greater Boston Community Tennis Inc.</span>
+              <h3>Mechanical Engineering Manager</h3>
+              <span className="tl-org">Telsonic Solutions</span>
               <p>
-                Massachusetts nonprofit running UTR-sanctioned tennis events,
-                clinics, lessons, and youth programming across the greater
-                Boston area — operations, marketing, and program leadership.
+                Engineering manager and process owner for industrial electro-mechanical
+                and pneumatic ultrasonic welding machines, tooling, and fixtures. Owned
+                the full product lifecycle: Business Case → FMEA → Design → Prototype →
+                Build → Test → Release. Implemented Lean Manufacturing, DFM, design review
+                cycles, Cmk studies, and SOP development for assembly, manufacturing, and
+                quality. Reduced machine and tooling cost by 25% through standardization
+                and DFM. Increased project success rates by 50% through process development.
+              </p>
+              <div className="tag-row" style={{ marginTop: 10 }}>
+                {['Lean Manufacturing', 'FMEA', 'DFM', 'Pneumatics', 'Ultrasonic Welding', 'SOP Development', 'Cmk / Cpk', 'Product Lifecycle'].map(t => (
+                  <span className="tag" key={t}>{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="tl-item">
+            <div className="tl-period">2014 — Present</div>
+            <div className="tl-role">
+              <h3>Founder &amp; Principal Designer</h3>
+              <span className="tl-org">Empirical Innovation</span>
+              <p>
+                Independent product design and development consultancy. Brings new
+                product ideas through the full development process — 3D modeling for
+                manufacturing, mold design, prototyping, patent drawings, and
+                manufacturing drawings. Products span electro-mechanical and commercial
+                markets, several with patents filed or pending.
               </p>
             </div>
           </div>
+
+          <div className="tl-item">
+            <div className="tl-period">2009 — 2017</div>
+            <div className="tl-role">
+              <h3>Mechanical Engineer</h3>
+              <span className="tl-org">Asahi America</span>
+              <p>
+                Mechanical engineering across the full product development cycle for
+                industrial fluid handling and water flow systems — conceptual design,
+                mechanical design, drafting, assembly design, and BOM management using
+                EPDM. Developed and implemented design processes to increase production
+                throughput and lower defect rates using 6-Sigma and Lean methods. Led
+                R&amp;D for new product development and improvement of existing fluid
+                handling products. Developed a patent-pending handheld field tool that
+                reduced offshore lead time significantly.
+              </p>
+              <div className="tag-row" style={{ marginTop: 10 }}>
+                {['Fluid Systems', '6-Sigma', 'Lean', 'EPDM', 'R&D', 'DFM', 'Product Development', 'Patent Pending'].map(t => (
+                  <span className="tag" key={t}>{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="tl-item">
+            <div className="tl-period">2003 — 2004</div>
+            <div className="tl-role">
+              <h3>Manufacturing Engineer — Internship</h3>
+              <span className="tl-org">Flexcon Industries</span>
+              <p>
+                Applied 6-Sigma and Lean manufacturing engineering to improve
+                production quality. Used SolidWorks FEA simulation to develop
+                impact testers for extruded plastic material strength testing
+                at varying temperatures and static loads. Reduced assembly line
+                variability by 1,600 ppm through statistical analysis (Cpk) and
+                process changes.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -416,7 +472,7 @@ function Footer() {
   return (
     <footer className="wrap">
       <span>© {new Date().getFullYear()} Conrad H. Williams</span>
-      <span>Winthrop, MA · Empirical Innovation</span>
+      <span>Winthrop, MA</span>
     </footer>
   )
 }
